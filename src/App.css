@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
-}
+/* NAV STYLE START */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+#nav-container {
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+h2, h5, p{
+  margin: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  margin: 0;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+/* NAV STYLE end
+ */
+
+/* NAV STYLE START */
+
+
+#header-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid gray;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+
+
+ul, li {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+
+}
+
+/* NAV STYLE START */
+
+
+
+#Layout {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto;
+}
+
+#profile-container {
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  grid-column: 2 / 3;
+  border: 3px solid red;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+#profile-banner {
+grid-column: 1 / 3;
+border-style: red;
+height: 200px;
+}
+
+#contact-info {
+  grid-column: 1 / 2;
+  border-style: blue;
+}
+
+#links {
+  grid-column: 2 /3;
+  place-self: center;
+}
+
+.link-img {
+  margin-right: 6px;
+}
+
+.link-item {
+  padding: 5px;
+
 }
