@@ -7,7 +7,7 @@
 
 }
 
-h2, h5, p{
+h2, h4,h5, p{
   margin: 0px;
 }
 
@@ -70,11 +70,17 @@ ul, li {
 grid-column: 1 / 3;
 border-style: red;
 height: 200px;
+background-color: aqua;
+margin-bottom: 25px;
+text-align: right;
+display:flex;
+flex-direction: row;
+justify-content: end;
+
 }
 
 #contact-info {
   grid-column: 1 / 2;
-  border-style: blue;
 }
 
 #links {
@@ -89,4 +95,60 @@ height: 200px;
 .link-item {
   padding: 5px;
 
+}
+
+.circle-button {
+  background-color: white;
+  height: 15%;
+  border-radius: 25px;
+  border: 3px solid gray;
+}
+
+.circle-button:hover{
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+#profile-edit {
+  padding: 10px;
+}
+
+.close-button{
+  padding: 15px 20px;
+}
+
+#edit-profile-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 3px solid grey;
+  background-color: white;
+  width: 50%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+}
+
+#edit-profile-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 30px;
+  border-bottom: 1px solid gray;
+}
+#edit-profile-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px 100px;
+  height: 300px;
+}
+
+.edit-input{
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#edit-profile-footer{
+  display: flex;
+  justify-content: end;
 }
